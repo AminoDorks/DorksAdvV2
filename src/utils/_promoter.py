@@ -1,5 +1,6 @@
 from googletrans import Translator
 from itertools import chain
+from re import findall
 
 from src.ui._ui import UIManager
 
@@ -110,12 +111,24 @@ class Promoter:
     @classmethod
     async def __get_translated_text(cls) -> Dict[str, str]:
         languages = {}
+        local_message = MESSAGE
+        finded_urls = findall(r"https?://[^\s]+", local_message)
+
+        for index, url in enumerate(finded_urls, 0):
+            local_message = local_message.replace(url, f"@{index}")
 
         for language in ["en", "ru", "ar", "de", "fr", "pt"]:
-            languages[language] = (await cls._translator.translate(
-                text=MESSAGE,
+            text = (await cls._translator.translate(
+                text=local_message,
                 dest=language
             )).text
+
+            for index, url in enumerate(finded_urls, 0):
+                text = text.replace(f"@{index}", url).replace(
+                    f"@ {index}", url
+                )
+
+            languages[language] = text
 
         return languages
 
