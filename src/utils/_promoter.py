@@ -372,7 +372,7 @@ class Promoter:
                 sub_client=sub_client,
                 language=str(community.primaryLanguage)
             )
-            await self._client.leave_community(str(community.comId))
+            # await self._client.leave_community(str(community.comId))
 
     async def start(self) -> None:
         semaphore = Semaphore(CONFIG.promote_config.workers)
