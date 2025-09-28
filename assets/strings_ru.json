@@ -1,0 +1,195 @@
+{
+    "inputs": {
+        "inputApiKey": "Введите API-ключ:",
+        "inputMinLevel": "Введите минимальный уровень пользователей:",
+        "inputMaxLevel": "Введите максимальный уровень пользователей:",
+        "inputMinUsersPerThread": "Введите максимальное количество пользователей в приватке:",
+        "inputMaxUsersPerCommunity": "Введите максимальное количество пользователей в сообществе:",
+        "inputProfileNickname": "Введите ник:",
+        "inputProfileAbout": "Введите описание:",
+        "inputProfileIcon": "Введите путь к иконке:",
+        "inputUseAntiban": "Использовать антибан?",
+        "inputThreadTitle": "Введите название приватки:",
+        "inputThreadDescription": "Введите описание приватки:",
+        "inputThreadAnnouncement": "Введите объявление приватки:",
+        "inputThreadThumbnail": "Введите путь к превью приватки:",
+        "inputThreadBackground": "Введите путь к фону приватки:",
+        "inputDelay": "Введите задержку в секуднах:",
+        "inputWorkers": "Введите количество воркеров:",
+        "inputEmail": "Введите почту:",
+        "inputPassword": "Введите пароль:",
+        "inputEnterToExit": "Для выхода нажмите Enter"
+    },
+    "choices": {
+        "selectMenu": "Выберите пункт меню:",
+        "selectTheme": "Выберите тему:",
+        "selectLanguage": "Выберите язык:",
+        "selectPromoteType": "Выберите тип пиара:",
+        "selectAccounts": "Выберите аккаунты:"
+    },
+    "statuses": {
+        "loggedIn": "Вы вошли в аккаунт {}\n",
+        "communityJoined": "Вы присоединились к сообществу",
+        "profileEdited": "Профиль успешно отредактирован",
+        "threadCreated": "Приватка c {} пользователем(ями) успешно создана",
+        "promoteResults": "\nСтатистика пиара:\n",
+        "invitedUsers": "Приглашено пользователей",
+        "createdThreads": "Создано приваток",
+        "addedCommunities": "Пройдено сообществ"
+    },
+    "errors": {
+        "errorWhileLogging": "Произошла ошибка при входе в аккаунт:",
+        "errorWhileJoiningCommunity": "Произошла ошибка при присоединении к сообществу",
+        "errorWhileEditingProfile": "Произошла ошибка при редактировании профиля: ",
+        "errorWhileCreatingThread": "Произошла ошибка при создании приватки: "
+    },
+    "menus": {
+        "main": [
+            {
+                "name": "Пиар",
+                "value": "promote"
+            },
+            {
+                "name": "Аккаунты",
+                "value": "accounts"
+            },
+            {
+                "name": "Настройки",
+                "value": "settings"
+            },
+            {
+                "name": "Автор",
+                "value": "credits"
+            }
+        ],
+        "promote": [
+            {
+                "name": "Начать пиар",
+                "value": "start"
+            },
+            {
+                "name": "Типы пиара",
+                "value": "promote-types"
+            },
+            {
+                "name": "Пользователи",
+                "value": "edit-promoted-users"
+            },
+            {
+                "name": "Редактировать профиль",
+                "value": "edit-profile"
+            },
+            {
+                "name": "Редактировать приватку",
+                "value": "edit-thread"
+            },
+            {
+                "name": "Редактировать задержку",
+                "value": "edit-delay"
+            },
+            {
+                "name": "Редактировать воркеры",
+                "value": "edit-workers"
+            },
+            {
+                "name": "Назад",
+                "value": "main"
+            }
+        ],
+        "accounts": [
+            {
+                "name": "Добавить аккаунт",
+                "value": "add-account"
+            },
+            {
+                "name": "Удалить аккаунты",
+                "value": "delete-accounts"
+            },
+            {
+                "name": "Обновить аккаунты",
+                "value": "refresh-accounts"
+            },
+            {
+                "name": "Назад",
+                "value": "main"
+            }
+        ],
+        "settings": [
+            {
+                "name": "Изменить API-ключ",
+                "value": "change-api-key"
+            },
+            {
+                "name": "Изменить тему",
+                "value": "change-theme"
+            },
+            {
+                "name": "Изменить язык",
+                "value": "change-language"
+            },
+            {
+                "name": "Назад",
+                "value": "main"
+            }
+        ],
+        "credits": [
+            {
+                "name": "Назад",
+                "value": "main"
+            }
+        ]
+    },
+    "themes": [
+        {
+            "name": "Classic",
+            "value": "classic"
+        },
+        {
+            "name": "Sunglight",
+            "value": "sunlight"
+        },
+        {
+            "name": "Green Orge",
+            "value": "grass"
+        },
+        {
+            "name": "Dracula",
+            "value": "purple"
+        },
+        {
+            "name": "Exit",
+            "value": "main"
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "value": "en"
+        },
+        {
+            "name": "Русский",
+            "value": "ru"
+        },
+        {
+            "name": "Назад",
+            "value": "main"
+        }
+    ],
+    "promoteTypes": [
+        {
+            "name": "Приватки",
+            "value": "private-chats"
+        },
+        {
+            "name": "Экспериментальный (В разработке)",
+            "value": "experimental-type"
+        },
+        {
+            "name": "Назад",
+            "value": "main"
+        }
+    ],
+    "other": {
+        "credits": "\nСделал: @celt_is_god\nТелеграм канал: @aminodorks\n"
+    }
+}

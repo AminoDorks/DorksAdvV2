@@ -1,0 +1,195 @@
+{
+    "inputs": {
+        "inputApiKey": "Enter API key:",
+        "inputMinLevel": "Enter minimum level of users:",
+        "inputMaxLevel": "Enter maximum level of users:",
+        "inputMinUsersPerThread": "Enter maximum users per thread:",
+        "inputMaxUsersPerCommunity": "Enter maximum users per community:",
+        "inputProfileNickname": "Enter nickname:",
+        "inputProfileAbout": "Enter description:",
+        "inputProfileIcon": "Enter path to icon:",
+        "inputUseAntiban": "Use antiban?",
+        "inputThreadTitle": "Enter thread title:",
+        "inputThreadDescription": "Enter thread description:",
+        "inputThreadAnnouncement": "Enter thread announcement:",
+        "inputThreadThumbnail": "Enter path to thread thumbnail:",
+        "inputThreadBackground": "Enter path to thread background:",
+        "inputDelay": "Enter delay in seconds:",
+        "inputWorkers": "Enter number of workers:",
+        "inputEmail": "Enter email:",
+        "inputPassword": "Enter password:",
+        "inputEnterToExit": "Press Enter to exit"
+    },
+    "choices": {
+        "selectMenu": "Select menu item:",
+        "selectTheme": "Select theme:",
+        "selectLanguage": "Select language:",
+        "selectPromoteType": "Select promote type:",
+        "selectAccounts": "Select accounts:"
+    },
+    "statuses": {
+        "loggedIn": "Logged in as {}",
+        "communityJoined": "You joined community",
+        "profileEdited": "Profile successfully edited",
+        "threadCreated": "Thread with {} users successfully created",
+        "promoteResults": "\nPromote results:\n",
+        "invitedUsers": "Invited users",
+        "createdThreads": "Created threads",
+        "addedCommunities": "Promoted in communities"
+    },
+    "errors": {
+        "errorWhileLogging": "An error occurred while logging in:",
+        "errorWhileJoiningCommunity": "An error occurred while joining community:",
+        "errorWhileEditingProfile": "An error occurred while editing profile:",
+        "errorWhileCreatingThread": "An error occurred while creating thread: "
+    },
+    "menus": {
+        "main": [
+            {
+                "name": "Promote",
+                "value": "promote"
+            },
+            {
+                "name": "Accounts",
+                "value": "accounts"
+            },
+            {
+                "name": "Settings",
+                "value": "settings"
+            },
+            {
+                "name": "Credits",
+                "value": "credits"
+            }
+        ],
+        "promote": [
+            {
+                "name": "Start promote",
+                "value": "start"
+            },
+            {
+                "name": "Promote types",
+                "value": "promote-types"
+            },
+            {
+                "name": "Promoted users",
+                "value": "edit-promoted-users"
+            },
+            {
+                "name": "Profile",
+                "value": "edit-profile"
+            },
+            {
+                "name": "Thread",
+                "value": "edit-thread"
+            },
+            {
+                "name": "Delay",
+                "value": "edit-delay"
+            },
+            {
+                "name": "Workers",
+                "value": "edit-workers"
+            },
+            {
+                "name": "Exit",
+                "value": "main"
+            }
+        ],
+        "accounts": [
+            {
+                "name": "Add account",
+                "value": "add-account"
+            },
+            {
+                "name": "Delete accounts",
+                "value": "delete-accounts"
+            },
+            {
+                "name": "Refresh accounts",
+                "value": "refresh-accounts"
+            },
+            {
+                "name": "Exit",
+                "value": "main"
+            }
+        ],
+        "settings": [
+            {
+                "name": "Change API key",
+                "value": "change-api-key"
+            },
+            {
+                "name": "Change theme",
+                "value": "change-theme"
+            },
+            {
+                "name": "Change language",
+                "value": "change-language"
+            },
+            {
+                "name": "Exit",
+                "value": "main"
+            }
+        ],
+        "credits": [
+            {
+                "name": "Exit",
+                "value": "main"
+            }
+        ]
+    },
+    "themes": [
+        {
+            "name": "Classic",
+            "value": "classic"
+        },
+        {
+            "name": "Sunglight",
+            "value": "sunlight"
+        },
+        {
+            "name": "Green Orge",
+            "value": "grass"
+        },
+        {
+            "name": "Dracula",
+            "value": "purple"
+        },
+        {
+            "name": "Exit",
+            "value": "main"
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "value": "en"
+        },
+        {
+            "name": "Русский",
+            "value": "ru"
+        },
+        {
+            "name": "Exit",
+            "value": "main"
+        }
+    ],
+    "promoteTypes": [
+        {
+            "name": "Private chats",
+            "value": "private-chats"
+        },
+        {
+            "name": "Experimental (WIP)",
+            "value": "experimental-type"
+        },
+        {
+            "name": "Exit",
+            "value": "main"
+        }
+    ],
+    "other": {
+        "credits": "\nScript by @celt_is_god\nTelegram channel: @aminodorks\n"
+    }
+}

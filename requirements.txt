@@ -1,0 +1,5 @@
+googletrans
+msgspec
+amino.dorks.fix
+InquirerPy
+nest_asyncio
