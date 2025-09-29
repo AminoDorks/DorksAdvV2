@@ -320,8 +320,10 @@ class Promoter:
         except YouAreBanned:
             return
         except InvalidCodeOrLink:
+            print('closed ', link)
             invite_code = match_invite_code(str(community_object.description))
 
+            print('code ', invite_code)
             if not invite_code:
                 return
 
@@ -332,6 +334,7 @@ class Promoter:
                         "http://aminoapps.com/invite/"
                     )[1]
                 )
+                print('joined', community_object.comId)
             except Exception:
                 return
             return community_object
@@ -372,7 +375,10 @@ class Promoter:
                 sub_client=sub_client,
                 language=str(community.primaryLanguage)
             )
-            # await self._client.leave_community(str(community.comId))
+            try:
+                await self._client.leave_community(str(community.comId))
+            except Exception:
+                pass
 
     async def start(self) -> None:
         semaphore = Semaphore(CONFIG.promote_config.workers)
