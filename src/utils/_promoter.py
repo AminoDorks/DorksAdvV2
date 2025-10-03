@@ -86,8 +86,8 @@ class Promoter:
         ), responses))
 
         user_dicts = list(map(lambda user: {
-            "user_id": user['uid'],
-            "level": user['level']
+            "user_id": user["uid"],
+            "level": user["level"]
             }, list(chain.from_iterable(
                 users
             )
@@ -96,7 +96,7 @@ class Promoter:
         filtered_user_dicts = list(
             filter(
                 lambda user_id: (
-                    user_id not in excluded_ids
+                    user_id["user_id"] not in excluded_ids
                     and cls.__level_is_valid(user_id["level"])
                 ),
                 user_dicts,
@@ -320,10 +320,7 @@ class Promoter:
         except YouAreBanned:
             return
         except InvalidCodeOrLink:
-            print('closed ', link)
             invite_code = match_invite_code(str(community_object.description))
-
-            print('code ', invite_code)
             if not invite_code:
                 return
 
@@ -334,7 +331,6 @@ class Promoter:
                         "http://aminoapps.com/invite/"
                     )[1]
                 )
-                print('joined', community_object.comId)
             except Exception:
                 return
             return community_object
